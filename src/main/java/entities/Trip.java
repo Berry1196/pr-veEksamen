@@ -25,8 +25,7 @@ public class Trip {
     private String duration;
     private String packingList;
 
-    public Trip(Long id, String name, Date date, String location, String duration, String packingList ) {
-        this.id = id;
+    public Trip( String name, Date date, String location, String duration, String packingList ) {
         this.name = name;
         this.date = date;
         this.location = location;

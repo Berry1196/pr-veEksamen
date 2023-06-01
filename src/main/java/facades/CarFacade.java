@@ -86,7 +86,7 @@ public class CarFacade {
     public static void main(String[] args) {
         emf = EMF_Creator.createEntityManagerFactory();
         CarFacade fe = getCarFacade(emf);
-
+        fe.getAllCars().forEach(dto -> System.out.println(dto));
 
     }
 

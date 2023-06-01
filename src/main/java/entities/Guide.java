@@ -24,5 +24,10 @@ public class Guide {
     private String gender;
     private Date birthYear;
 
+public Guide( String name, String gender, Date birthYear) {
+    this.name = name;
+    this.gender = gender;
+    this.birthYear = birthYear;
+}
 
 }
