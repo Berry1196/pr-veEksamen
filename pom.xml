@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dk.berrywebsite</groupId>
-    <artifactId>prøve-eksamen</artifactId>
+    <artifactId>prove-eksamen</artifactId>
     <version>1.0.1</version>
     <packaging>war</packaging>
 
