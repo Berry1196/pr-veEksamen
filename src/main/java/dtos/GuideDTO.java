@@ -18,7 +18,6 @@ public class GuideDTO {
     private TripDTO trip;
 
     public GuideDTO(Guide guide) {
-        this.id = guide.getId();
         this.name = guide.getName();
         this.gender = guide.getGender();
         this.birthYear = guide.getBirthYear();

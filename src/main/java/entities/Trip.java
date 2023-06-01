@@ -37,7 +37,7 @@ public class Trip {
     @ManyToMany
     private List<User> userList = new ArrayList<>();
 
-    @ManyToOne
+    @OneToOne
     private Guide guide;
 
 }

@@ -29,7 +29,7 @@ public Guide( String name, String gender, String birthYear) {
     this.gender = gender;
     this.birthYear = birthYear;
 }
-    @ManyToOne
+    @OneToOne
     private Trip trip;
 
 }
