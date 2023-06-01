@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dk.berrywebsite</groupId>
-    <artifactId>workouts</artifactId>
+    <artifactId>proveEksamen</artifactId>
     <version>1.0.1</version>
     <packaging>war</packaging>
 
-    <name>workouts</name>
+    <name>proveeksamen</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
