@@ -2,6 +2,7 @@ package entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -38,11 +39,22 @@ public class User implements Serializable {
     @Size(min = 1, max = 255)
     @Column(name = "user_pass")
     private String userPass;
+    private String address;
+    private String phone;
+    private String email;
+    private String birthYear;
+    private String gender;
+
     @JoinTable(name = "user_roles", joinColumns = {
             @JoinColumn(name = "user_name", referencedColumnName = "user_name")}, inverseJoinColumns = {
             @JoinColumn(name = "role_name", referencedColumnName = "role_name")})
     @ManyToMany
     private List<Role> roleList = new ArrayList<>();
+
+    @ManyToMany(mappedBy = "userList")
+    private List<Trip> tripList = new ArrayList<>();
+
+
 
     public List<String> getRolesAsStrings() {
         if (roleList.isEmpty()) {

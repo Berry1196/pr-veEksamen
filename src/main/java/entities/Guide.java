@@ -22,12 +22,14 @@ public class Guide {
     private Long id;
     private String name;
     private String gender;
-    private Date birthYear;
+    private String birthYear;
 
-public Guide( String name, String gender, Date birthYear) {
+public Guide( String name, String gender, String birthYear) {
     this.name = name;
     this.gender = gender;
     this.birthYear = birthYear;
 }
+    @ManyToOne
+    private Trip trip;
 
 }
